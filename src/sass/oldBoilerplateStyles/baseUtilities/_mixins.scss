@@ -1,0 +1,50 @@
+// https://bitsofco.de/3-useful-reusable-sass-mixins/
+// http://www.portfour.com/2015/07/18/css3-animation-with-sass-mixins/
+// http://brandonbrule.github.io/scss-animation-keyframe-mixin/
+// http://w3bits.com/sass-mixins/
+// https://cssauthor.com/sass-resources/
+
+// use @ include for mixins
+// you can use placeholders inside of mixins
+// refer to placeholders with %
+@mixin rounded-corner($arc) {
+  border-radius : $arc;
+
+  
+}
+@mixin shadow($xval, $yval, $blur, $spread){
+  box-shadow: $xval $yval $blur $spread rgba(0,0,0,0.71);
+}
+@mixin insetshadow($xval, $yval, $blur, $spread){
+  box-shadow: inset $xval $yval $blur $spread rgba(0,0,0,0.71);
+}
+@mixin insetshadow4($xval, $yval, $blur, $spread){
+  box-shadow: inset $xval $yval $blur $spread rgba(0,0,0,0.71),
+ inset -$xval $yval $blur $spread rgba(0,0,0,0.71),
+ inset -$xval -$yval $blur $spread rgba(0,0,0,0.71),
+ inset $xval -$yval $blur $spread rgba(0,0,0,0.71),
+}
+
+//http://www.castlecss.com/mixins.html
+@mixin transform($transforms) {
+    transform: $transforms;
+}
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+@mixin scale($scale) {
+     @include transform(scale($scale));
+}
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+@mixin translateX ($x) {
+    @include transform(translateX($x));
+}
+@mixin translateY ($y) {
+    @include transform(translateY($y));
+}
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+

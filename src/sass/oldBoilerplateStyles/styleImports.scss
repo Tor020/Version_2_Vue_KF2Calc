@@ -1,0 +1,35 @@
+// to add a separate file to compile and draw from just add another .scss file without an underscore for the filename and it will get compiled into the css folder
+@import './Dev/sass/baseUtilities/_variables.scss';
+
+@import './Dev/sass/baseUtilities/_mixins.scss';
+
+@import './Dev/sass/baseUtilities/_placeholders.scss';  
+
+@import './Dev/sass/baseUtilities/_variables.scss';
+/* Importing Bulma Overwrites FIles */ 
+
+// @import './Dev/sass/bulmaOverwrites/_customBulma.scss'; 
+
+/* grid example */
+@import './Dev/sass/grid-example/_hamster_grid.scss';
+@import './Dev/sass/grid-example/_hamster_grid_mediaQ.scss';
+
+/* Importing All Base Utilities */
+@import './Dev/sass/baseUtilities/_mixins.scss';
+@import './Dev/sass/baseUtilities/_placeholders.scss';  
+ 
+/* Importing Layout FIles */
+@import './Dev/sass/pages/global.scss';
+@import './Dev/sass/pages/index.scss';
+         
+
+
+
+ 
+/* Importing Layout FIles */
+@import './Dev/sass/pages/_global.scss';
+@import './Dev/sass/pages/_index.scss';
+
+
+
+           

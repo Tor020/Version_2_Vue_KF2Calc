@@ -1,0 +1,22 @@
+.testdiv {
+  @extend %container;  //placeholder
+
+@include rounded-corner(3px);  //mixin
+}
+.layer {
+  text-align:center;
+  margin:0 auto;
+  @extend %outsideMargin;
+
+@include shadow(1px, 2px, 4px, 1px);
+}
+
+.layerbtab{
+  @extend .layer;
+
+
+  .table{
+    text-align:center;
+    margin:0 auto;
+  }
+}

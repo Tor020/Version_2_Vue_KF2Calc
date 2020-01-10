@@ -1,0 +1,95 @@
+$gray:  hsla(0, 0%, 30%,1);
+
+
+body {
+  background:lighten($gray, 55%);
+  display : grid;
+
+  grid-template-columns : 12% auto 400px 12%;         // 4 rows x axis
+  grid-template-rows : 5vh 5vh 100vh auto auto auto;  //6 collumns y axis
+  grid-template-areas : 
+  " top-bar     top-bar     top-bar     . "
+  " . main-header main-header main-header "  
+  " hero        hero        hero        hero  " 
+  " .           blog-posts  side-bar    . "
+  " .           news        side-bar    . "
+  "main-footer main-footer main-footer main-footer  ";
+}
+
+.top-bar {
+  color:lighten($gray, 50%);
+
+  background:$gray;
+  padding : 4px 12%;  //padding for element layout
+
+  
+  grid-area : top-bar;  //referencing grid-template-areas
+}	
+.main-header {
+  color:lighten($gray, 50%);
+  background:darken($gray, 5%);
+
+  padding : 12px 12%;  //padding for element layout
+
+  
+  grid-area : main-header; //referencing grid-template-areas
+}	
+.hero {
+  color:lighten($gray, 50%);
+  background:lighten($gray, 5%);
+  display : grid;
+  padding : 55px 12% 0 12%;  //padding for element layout
+
+
+  grid-template-columns : auto 1fr auto;
+  grid-template-rows : auto auto auto;
+
+  
+  grid-area : hero; //referencing grid-template-areas
+  grid-template-areas : 
+  "   .         .     award    "
+  "   message   .     .        "
+  "   .         .     .        ";
+}
+.message {
+  color:lighten($gray, 50%);
+  background:lighten($gray, 2%);
+  
+  grid-area : message; //referencing Hero grid-template-areas
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 2%;
+}
+.award {
+  color:lighten($gray, 50%);
+  background:lighten($gray, 2%);
+  
+  grid-area : award; //referencing Hero grid-template-areas
+}
+.side-bar {
+  color:lighten($gray, 50%);
+  background:lighten($gray, 1%);
+  
+  grid-area : side-bar; //referencing grid-template-areas
+}
+.blog-posts {
+  color:lighten($gray, 50%);
+    background:lighten($gray, 2%);
+  
+  grid-area : blog-posts; //referencing grid-template-areas
+}
+.news {
+  color:lighten($gray, 50%);
+  background:lighten($gray, 2%);
+  
+  grid-area : news; //referencing grid-template-areas
+}
+.main-footer {
+  color:lighten($gray, 50%);
+  background:lighten($gray, 5%);
+  padding : 25px 12%;  //padding for element layout
+
+  
+  grid-area : main-footer; //referencing grid-template-areas
+}

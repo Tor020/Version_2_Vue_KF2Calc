@@ -1,0 +1,130 @@
+$tablehead:hsl(190, 41%, 17%);  //trying to get darken function to get a placeholder for it but  dont want 2 lose if i fuk up
+
+$twitteraccentred:#e81c4f;
+$twitteraccentblue:#1b95e0;
+$twitteraccentgreen:rgb(25, 204, 132);
+$twitteraccentorange:#ff691f;
+$twitteraccentpurple:#981ceb;
+
+$content:rgba(255, 255, 255, 0.8);
+
+$accent:$twitteraccentgreen;
+
+
+
+$elebg:hsl(211, 33%, 16%);
+$betterbg:hsl(209, 61%, 12%);
+
+
+
+
+@import '../oldBoilerplateStyles/baseUtilities/_mixins.scss';
+@import './_killbootstrap.scss';
+@import './_toolTips.scss';
+
+
+input[type='button'] {
+
+  color:$content;
+  background-color: $elebg;
+  border-style: none;
+  outline: none;
+  transition: all 700ms;
+  border-radius: 6px;
+    &:hover {
+    box-shadow: inset 2px 2px 5px 0px hsla(145, 100%, 25%, 0.5),
+      inset -2px -2px 5px 0px hsla(145, 100%, 25%, 0.5);
+  }
+  &:hover,&:focus{
+    color:$content;
+  }
+}
+ 
+#navbar,
+.navbar-brand,
+.navbar-inverse,
+.router-link-exact-active,
+.router-link-active {
+  background-color: $betterbg;
+}
+
+body,
+input {
+  background-color: $betterbg;
+}
+
+.main {
+  color: $content;
+  background-color: $betterbg;
+
+}
+
+.nav-sidebar>.active>a,
+.nav-sidebar>.active>a:hover,
+.nav-sidebar>.active>a:focus {
+  background-color: lighten($elebg, 10%)
+}
+
+.sidebar {
+  background-color: $betterbg;
+}
+
+hr {
+  border-top: 1px solid darken($accent, 20%);
+}
+.sub-header,legend{
+  border-bottom: 1px solid darken($accent, 20%);
+}
+.nav>li>a:hover,
+.nav>li>a:focus {
+  color:white;
+  background-color: lighten($elebg, 10%);
+
+}
+
+a,
+h3,
+label,
+legend {
+  background-color:$betterbg;
+    color: darken($accent, 12%);
+}
+
+table {
+  background-color: $elebg;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: lighten($elebg, 5%);
+}
+
+.well{
+background-color:rgba(0,0,0,0.3);
+border:none;
+}
+th {
+
+  background-color: $elebg;
+    color: hsla(156, 78%, 45%, 0.6);
+}
+
+.table>tbody>tr>td {
+  padding: 1.4rem;
+}
+
+.nav-sidebar>li>a {
+    padding-right: 20px;    
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.nav>li>a>img {
+    max-width: none;
+    margin-right: 6px;
+    filter: invert(70%);
+}
+
+

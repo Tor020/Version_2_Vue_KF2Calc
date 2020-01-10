@@ -1,0 +1,97 @@
+    /* @function calculate-width ($col-span) {
+  @return 100% / $col-span 
+}
+.span-two {
+  width: calculate-width(2); // spans 2 columns, width = 50%
+}
+.span-three {
+  width: calculate-width(3); // spans 3 columns, width = 33.3%
+}
+*/
+
+/* Fucking Colors */
+// Color Mixing Utility for Sass https://codepen.io/Tor020/pen/ooQZzz?editors=0110
+
+// http://jackiebalzer.com/color
+// https://robots.thoughtbot.com/controlling-color-with-sass-color-functions
+
+
+// darken($color, 5%)
+// lighten($color, 5%)
+// saturate($color, 5%)
+// desaturate($color, 5%)
+// grayscale($color)
+// adjust-hue($color, 15deg)
+// compliment($color)    
+// invert($color)
+// fade-in($color, .5)   
+// fade-out($color, .5)  
+// rgba($color, .5)      
+
+//     /* Overview */
+// Methods in this module are accessible from the SassScript context. For example, you can write
+// $color: hsl(120deg, 100%, 50%)
+// and it will call #hsl.
+// The following functions are provided:
+// Note: These functions are described in more detail below.
+
+//     /* RGB Functions */
+
+// rgb($red, $green, $blue) : Creates a Color from red, green, and blue values.
+// rgba($red, $green, $blue, $alpha) : Creates a Color from red, green, blue, and alpha values.
+// red($color) : Gets the red component of a color.
+// green($color) : Gets the green component of a color.
+// blue($color) : Gets the blue component of a color.
+// mix($color1, $color2, [$weight]) : Mixes two colors together.
+
+//     /* HSL Functions */
+
+// hsl($hue, $saturation, $lightness) : Creates a Color from hue, saturation, and lightness values.
+// hsla($hue, $saturation, $lightness, $alpha) : Creates a Color from hue, saturation, lightness, and alpha values.
+// hue($color) : Gets the hue component of a color.
+// saturation($color) : Gets the saturation component of a color.
+// lightness($color) : Gets the lightness component of a color.
+// adjust-hue($color, $degrees) : Changes the hue of a color.
+// lighten($color, $amount) : Makes a color lighter.
+// darken($color, $amount) : Makes a color darker.
+// saturate($color, $amount) : Makes a color more saturated.
+// desaturate($color, $amount) : Makes a color less saturated.
+// grayscale($color) : Converts a color to grayscale.
+// complement($color) : Returns the complement of a color.
+// invert($color, [$weight]) : Returns the inverse of a color.
+
+//     /* Opacity Functions */
+
+// alpha($color) / opacity($color) : Gets the alpha component (opacity) of a color.
+// rgba($color, $alpha) : Changes the alpha component for a color.
+// opacify($color, $amount) / fade-in($color, $amount) : Makes a color more opaque.
+// transparentize($color, $amount) / fade-out($color, $amount) : Makes a color more transparent.
+
+//     /* Other Color Functions */
+
+// adjust-color($color, [$red], [$green], [$blue], [$hue], [$saturation], [$lightness], [$alpha]) : Increases or decreases one or more components of a color.
+// scale-color($color, [$red], [$green], [$blue], [$saturation], [$lightness], [$alpha]) : Fluidly scales one or more properties of a color.
+// change-color($color, [$red], [$green], [$blue], [$hue], [$saturation], [$lightness], [$alpha]) : Changes one or more properties of a color.
+// ie-hex-str($color) : Converts a color into the format understood by IE filters.
+
+//     /* String Functions */
+
+// unquote($string) : Removes quotes from a string.
+// quote($string) : Adds quotes to a string.
+// str-length($string) : Returns the number of characters in a string.
+// str-insert($string, $insert, $index) : Inserts $insert into $string at $index.
+// str-index($string, $substring) : Returns the index of the first occurrence of $substring in $string.
+// str-slice($string, $start-at, [$end-at]) : Extracts a substring from $string.
+// to-upper-case($string) : Converts a string to upper case.
+// to-lower-case($string) : Converts a string to lower case.
+
+//     /* Number Functions */
+
+// percentage($number) : Converts a unitless number to a percentage.
+// round($number) : Rounds a number to the nearest whole number.
+// ceil($number) : Rounds a number up to the next whole number.
+// floor($number) : Rounds a number down to the previous whole number.
+// abs($number) : Returns the absolute value of a number.
+// min($numbers...) : Finds the minimum of several numbers.
+// max($numbers...) : Finds the maximum of several numbers.
+// random([$limit]) : Returns a random number.

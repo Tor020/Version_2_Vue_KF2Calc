@@ -1,0 +1,138 @@
+body {
+  padding-top: 50px;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+}
+td, th{
+  text-align:center;
+}
+.sidebar {}
+
+/*
+  Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+Top navigation
+Hide default border to remove 1px line.
+*/
+
+.navbar-fixed-top {
+  border: 0;
+}
+
+/* Sidebar  */
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+.nav-sidebar {
+  margin-right: -21px;
+  /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+
+.nav-sidebar>li>a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.nav-sidebar>.active>a,
+.nav-sidebar>.active>a:hover,
+.nav-sidebar>.active>a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+/* Main Content */
+
+.main {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+.main .page-header {
+  margin-top: 0;
+}
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.placeholders h4 {
+  margin-bottom: 0;
+}
+
+.placeholder {
+  margin-bottom: 20px;
+}
+
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+}
+
+/* IE8- CSS hack */
+
+@media \0screen\,screen\9 {
+    .gradient {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe2e2e2",endColorstr="#fffefefe",GradientType=0);
+    }
+}
+.highlight {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #f5f5f5;
+}
+
+.highlight>p {
+  padding-top: .5em;
+}
+
+.adsbygoogle {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.moreInfoDivClass>ul {
+  margin: 0 0 1em 0
+}
+
+.moreInfoButtonClass {
+  margin: 0 0 2em 0
+}
+
+.moreInfoButtonClassZED {}

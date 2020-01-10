@@ -1,0 +1,54 @@
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto'); insert appropriate font name into statement
+
+      // Sans-Serif
+// Main Content
+Roboto: Thicker readable letters with good spacing 
+Open Sans: Larger letters slightly more spacing comparable to Roboto
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+// Headlines
+Raleway: Good for headlines, thinner letters. less readable  for paragraphs
+Montserrat: Good for headlines or main text Thinner and more spacing between words than Roboto and Raleway. 
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+// Block Quotes
+Oswald: Good for Block Quotes. Thicker Close together letters
+
+font-family: 'Oswald', sans-serif;
+
+      // Serif / Other
+
+// Elegant Titling
+  font-family: 'Tangerine', cursive;  |Tangerine
+  font-family: 'Sacramento', cursive; |Sacramento
+
+// Spooky Serif Headline
+ font-family: 'Cinzel', serif;      |Cinzel
+
+//Spooky Serif Content Text, might be good for scare story 
+
+font-family: 'Josefin Slab', serif; |Josefin+Slab
+
+// Book page style Text
+font-family: 'Rasa', serif;         |Rasa 
+font-family: 'Slabo 27px', serif;   |Slabo+27px
+
+// Block quote Serif
+font-family: 'Bree Serif', serif;   |Bree+Serif
+
+// Cursive what why 
+font-family: 'Sacramento', cursive;               //Unreadable
+font-family: 'Fredericka the Great', cursive;     //Shaded, really not cursive ,
+
+// Horrendus Indie shit
+font-family: 'Indie Flower', cursive; |Indie+Flower  //Every hipster font ever
+
+// Hand Writing 
+font-family: 'Architects Daughter', cursive; |Architects+Daughter //Passable thicker alright handwriting
+font-family: 'Shadows Into Light Two', cursive; |Shadows+Into+Light+Two  //Longer wavier handwriting
+
+      */

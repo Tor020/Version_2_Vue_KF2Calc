@@ -1,0 +1,23 @@
+// 1. Import the initial variables
+// https://bulma.io/documentation/overview/customize/
+
+
+@import './Dev/sass/baseUtilities/_variables.scss';
+@import "../../vendor/utilities/initial-variables";
+@import "../../vendor/utilities/functions";
+
+
+
+
+
+$family-serif: "Roboto", sans-serif;
+
+
+$family-primary: $font-Body;
+
+
+
+ 
+@import "../../vendor/bulma.scss";
+ 
+

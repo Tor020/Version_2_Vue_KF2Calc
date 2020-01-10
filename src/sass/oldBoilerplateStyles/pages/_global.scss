@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto");
+html {
+  font-size : 16px;
+}
+body {
+  color : $body-Font;
+  font-size : 1rem;
+  line-height : 1.5;
+
+  margin : 0;
+  padding : 0;
+
+  background-color : $body-Bg;
+
+@extend %useBodyFont;
+}
+a {
+  color : darken($base-Accent, 10%);
+
+  transition : 0.5s all;
+  text-decoration : none;
+  &:hover {
+    color : adjust-hue($base-Accent, 10%);
+  }
+}
+li {
+  list-style : none;
+  list-style-image : none;
+}
+span,
+input,
+form,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+a {
+  @extend %zeroMargin;
+}
+h1 {
+  font-size : 2rem;
+
+@extend %useHeadlineFont;
+}
+h2 {
+  font-size : 1.8rem;
+
+@extend %useHeadlineFont;
+}
+h3 {
+  font-size : 1.6rem;
+
+@extend %useHeadlineFont;
+}
+h4 {
+  font-size : 1.4rem;
+
+@extend %useHeadlineFont;
+}
+h5 {
+  font-size : 1.2rem;
+
+@extend %useHeadlineFont;
+}
